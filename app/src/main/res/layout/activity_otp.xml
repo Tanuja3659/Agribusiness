@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OtpActivity"
+    tools:ignore="ExtraText">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="90dp"
+            android:src="@drawable/send"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/otp_verification"
+            android:textSize="20sp"
+            android:textColor="@color/colortextfirst"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="50dp"
+            android:text="@string/we_will_send_you_an_otp_on_this_given_mobile_number"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textColor="@color/colortextsecond"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="30dp"
+            android:text="@string/enter_mobile_number"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textColor="@color/colortextsecond"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="60dp"
+            android:gravity="center"
+            android:background="@drawable/backgroundbox"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="@string/_91"
+                android:drawableStart="@drawable/baseline"
+                android:textSize="16sp"
+                android:textColor="@color/colortextfirst"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/idEdtPhoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@null"
+
+                android:hint="1234567890"
+                android:imeOptions="actionDone"
+                android:importantForAutofill="no"
+                android:inputType="phone"
+                android:textColor="@color/colortextfirst"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/idBtnGetOtp"
+                android:layout_margin="30dp"
+                android:background="@drawable/backgroundbutton"
+                android:text="Get OTP"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+
+        </FrameLayout>>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="60dp"
+            android:gravity="center"
+            android:background="@drawable/backgroundbox"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/idEdtOtp"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:importantForAutofill="no"
+                android:inputType="phone"
+                android:textColor="@color/colortextfirst"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        </LinearLayout>
+        <!--button for verifying user OTP-->
+        <Button
+            android:id="@+id/idBtnVerify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Verify OTP"
+            android:layout_margin="30dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:background="@drawable/backgroundbutton"/>
+
+    </LinearLayout>>
+
+</ScrollView>

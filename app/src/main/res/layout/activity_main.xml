@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    tools:ignore="MissingDefaultResource">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="650dp"
+            android:layout_marginVertical="100dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/custom_edittext"
+            card_view:cardCornerRadius="30dp"
+            card_view:cardElevation="20dp">
+
+
+            <RelativeLayout
+                android:id="@+id/rlayout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#673AB7">
+
+                <ImageButton
+                    android:id="@+id/backbtn"
+                    android:layout_width="39dp"
+                    android:layout_height="41dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="74dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_toStartOf="@+id/addProduct"
+                    android:background="@null"
+                    android:src="@drawable/baseline_arrow_back_ios_24"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:id="@+id/addProduct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginEnd="91dp"
+                    android:layout_marginBottom="14dp"
+                    android:text="Add Product"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+
+                    />
+            </RelativeLayout>
+
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/prod_image"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="16dp"
+                android:contentDescription="@string/prod_image"
+                android:src="@drawable/baseline_add_shopping_cart_24" />
+
+
+            <EditText
+                android:id="@+id/upiid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/prod_image"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="376dp"
+                android:layout_marginBottom="5dp"
+                android:contentDescription="@string/upi_id"
+                android:drawableStart="@drawable/baseline_perm_identity_24"
+                android:drawablePadding="10dp"
+                android:hint="UPI ID"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:padding="10dp"
+                android:textSize="20sp"
+                tools:ignore="EditableContentDescCheck" />
+
+            <EditText
+                android:id="@+id/vegetableName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/prod_image"
+                android:layout_marginTop="180dp"
+                android:contentDescription="@string/vegetableName"
+                android:drawableStart="@drawable/baseline_title_24"
+                android:drawablePadding="10dp"
+                android:hint="Title"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                android:inputType="textPersonName|textCapWords"
+                android:minHeight="48dp"
+                android:textSize="20sp"
+                app:cornerRadius="20dp"
+                tools:ignore="EditableContentDescCheck" />
+
+
+            <EditText
+                android:id="@+id/vegetablePrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vegetableName"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="328dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:contentDescription="@string/vegetablePrice"
+                android:drawableStart="@drawable/baseline_shopping_cart_24"
+                android:drawablePadding="10dp"
+                android:hint="Price"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:padding="10dp"
+                android:textSize="20sp"
+                tools:ignore="EditableContentDescCheck" />
+
+            <EditText
+                android:id="@+id/descriptionEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/titleEt"
+                android:layout_marginTop="278dp"
+                android:drawableStart="@drawable/baseline_title_24"
+                android:drawablePadding="10dp"
+                android:hint="Description"
+                android:inputType="textCapSentences|textMultiLine"
+                android:minHeight="48dp" />
+
+
+            <EditText
+                android:id="@+id/quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/category"
+                android:layout_marginTop="230dp"
+                android:contentDescription="@string/quantity"
+                android:drawableStart="@drawable/baseline_shopping_cart_24"
+                android:drawablePadding="10dp"
+                android:hint="Quantity eg kg.,grams, etc"
+                android:inputType="number"
+                android:minHeight="48dp"
+                tools:ignore="EditableContentDescCheck" />
+
+            <Button
+                android:id="@+id/AddVegetable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="220dp"
+                android:contentDescription="@string/AddVegetable"
+                android:text="Upload"
+                android:background="@drawable/backgroundbtn"
+                android:textSize="18sp" />
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+
+</LinearLayout>
+

@@ -1,0 +1,42 @@
+<!-- fragment_home.xml -->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- Your existing views -->
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="16dp"
+                tools:ignore="SpeakableTextPresentCheck" />
+            <TextView
+                android:id="@+id/info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_below="@+id/viewPager"
+                android:layout_marginStart="40dp"
+                android:textSize="15.5sp"
+                android:justificationMode="inter_word"
+                android:layout_marginEnd="40dp"
+                android:text="The word modern farming means the use of modern technologies, techniques and science for increasing farming productions. Farming plays an important role in the development of human civilization.&#xA;&#xA;Prior to the industrial revolution, most of those people used to do farming for their daily basic needs like food, clothing, and shelter. They had no idea of world marketplace and used to have very low production due to use of traditional farming methods. But now the things have changed.&#xA;&#xA;Development of agriculture and farming technology has greatly increased the farming productivity. Various types of modern farming methods which are used nowadays are agribusiness, intensive farming, organic farming, and sustainable agriculture, etc. Farmers are now able to buy and sell their products in the world markets. With the increased use of pesticides with synthetic nitrogen, mechanization and mined rock phosphate, the crop production has greatly increased.&#xA;&#xA;It has channelized green revolution in cereal production like rice, wheat, corn etc. Previously, farmers used to plough to dig the soil. On the other hand, farmers these days use modern equipment like multi facilities tractor to dig the soil. In the past farmers were dependent on natural weather conditions and fertilizers and used to have very low productivity.&#xA;&#xA;Now the things have changed, with the use of synthetic fertilizers,high productive breeds, farming productivity has increased a lot. As we all know, world population is increasing rapidly. We need more products like food, cloth etc. which totally depends on farming production. As a result, we need more production in farming which is quite difficult in traditional farming. Hence, modern farming is a must to get more production according to rapid population growth."/>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>

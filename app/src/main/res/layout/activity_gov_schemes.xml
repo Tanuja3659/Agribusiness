@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GovSchemesActivity">
+
+    <!--
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        android:background="@drawable/custom_edittext"> -->
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="-127dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/gov_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="Government Schemes"
+            android:textAlignment="center"
+            android:textColor="@color/purple"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/sch1_iv"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/gov_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/g3" />
+
+        <TextView
+            android:id="@+id/sch1_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sch1_iv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp"
+            android:justificationMode="inter_word"
+            android:text="@string/gs1"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/sch2_iv"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/sch1_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/g1" />
+
+        <TextView
+            android:id="@+id/sch2_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sch2_iv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="6dp"
+            android:justificationMode="inter_word"
+            android:text="@string/gs2"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/sch3_iv"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/sch2_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/g7" />
+
+        <TextView
+            android:id="@+id/sch3_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sch3_iv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="6dp"
+            android:justificationMode="inter_word"
+            android:text="@string/gs3"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/sch4_iv"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/sch3_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/g5" />
+
+        <TextView
+            android:id="@+id/sch4_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sch4_iv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="6dp"
+            android:justificationMode="inter_word"
+            android:text="@string/gs4"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/sch5_iv"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/sch4_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/g2" />
+
+        <TextView
+            android:id="@+id/sch5_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sch5_iv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="6dp"
+            android:justificationMode="inter_word"
+            android:text="@string/gs5"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/sch6_iv"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/sch5_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/g6" />
+
+        <TextView
+            android:id="@+id/sch6_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sch6_iv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="6dp"
+            android:justificationMode="inter_word"
+            android:text="@string/gs6"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/sch7_iv"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/sch6_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/g8" />
+
+        <TextView
+            android:id="@+id/sch7_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sch7_iv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="6dp"
+            android:justificationMode="inter_word"
+            android:text="@string/gs7"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/sch8_iv"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/sch7_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/g9" />
+
+        <TextView
+            android:id="@+id/sch8_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sch8_iv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="6dp"
+            android:justificationMode="inter_word"
+            android:text="@string/gs8"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/sch9_iv"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/sch8_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/g10" />
+
+        <TextView
+            android:id="@+id/sch9_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sch9_iv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="50dp"
+            android:justificationMode="inter_word"
+            android:text="@string/gs9"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+        </ScrollView>
+
+  <!--  </androidx.cardview.widget.CardView> -->
+
+</LinearLayout>

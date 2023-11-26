@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/colorWhite"
+    tools:context=".ConsultationActivity">
+ <!--
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        android:background="@drawable/custom_edittext"> -->
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="-127dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <TextView
+                    android:id="@+id/consul_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="Consultation"
+                    android:layout_centerHorizontal="true"
+                    android:textAlignment="center"
+                    android:textColor="@color/purple"
+                    android:textSize="33sp"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:id="@+id/veg"
+                    android:layout_width="290dp"
+                    android:layout_height="150dp"
+                    android:layout_below="@+id/consul_tv"
+                    android:layout_marginTop="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/v3"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginStart="30dp"
+                    />
+
+                <TextView
+                    android:id="@+id/info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:layout_below="@+id/veg"
+                    android:layout_marginStart="40dp"
+                    android:textSize="15.5sp"
+                    android:justificationMode="inter_word"
+                    android:layout_marginEnd="40dp"
+                    android:text="The word modern farming means the use of modern technologies, techniques and science for increasing farming productions. Farming plays an important role in the development of human civilization.&#xA;&#xA;Prior to the industrial revolution, most of those people used to do farming for their daily basic needs like food, clothing, and shelter. They had no idea of world marketplace and used to have very low production due to use of traditional farming methods. But now the things have changed.&#xA;&#xA;Development of agriculture and farming technology has greatly increased the farming productivity. Various types of modern farming methods which are used nowadays are agribusiness, intensive farming, organic farming, and sustainable agriculture, etc. Farmers are now able to buy and sell their products in the world markets. With the increased use of pesticides with synthetic nitrogen, mechanization and mined rock phosphate, the crop production has greatly increased.&#xA;&#xA;It has channelized green revolution in cereal production like rice, wheat, corn etc. Previously, farmers used to plough to dig the soil. On the other hand, farmers these days use modern equipment like multi facilities tractor to dig the soil. In the past farmers were dependent on natural weather conditions and fertilizers and used to have very low productivity.&#xA;&#xA;Now the things have changed, with the use of synthetic fertilizers,high productive breeds, farming productivity has increased a lot. As we all know, world population is increasing rapidly. We need more products like food, cloth etc. which totally depends on farming production. As a result, we need more production in farming which is quite difficult in traditional farming. Hence, modern farming is a must to get more production according to rapid population growth."/>
+
+
+                <TextView
+                    android:id="@+id/implinks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/info"
+                    android:layout_marginStart="40dp"
+                    android:textSize="18sp"
+                    android:layout_marginTop="30dp"
+                    android:text="Important Links"
+                    android:textStyle="bold"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/L1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/implinks"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="30dp"
+                    android:textSize="14sp"
+                    android:justificationMode="inter_word"
+                    android:layout_marginEnd="40dp"
+                    android:text="@string/hyperlink"/>
+
+                <TextView
+                    android:id="@+id/L2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/L1"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="30dp"
+                    android:textSize="14sp"
+                    android:justificationMode="inter_word"
+                    android:layout_marginEnd="40dp"
+                    android:text="@string/hl1"/>
+
+                <TextView
+                    android:id="@+id/L3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/L2"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="30dp"
+                    android:textSize="14sp"
+                    android:justificationMode="inter_word"
+                    android:layout_marginEnd="40dp"
+                    android:text="@string/hl2"/>
+
+                <TextView
+                    android:id="@+id/L4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/L3"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="30dp"
+                    android:textSize="14sp"
+                    android:justificationMode="inter_word"
+                    android:layout_marginEnd="40dp"
+                    android:text="@string/hl3" />
+
+                <Button
+                    android:id="@+id/gov_sch"
+                    android:layout_width="match_parent"
+                    android:layout_below="@id/L4"
+                    android:layout_height="60dp"
+                    android:textSize="16sp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:backgroundTint="@color/purple"
+                    android:layout_marginTop="40dp"
+                    app:cornerRadius="20dp"
+                    android:minWidth="120dp"
+                    android:layout_marginBottom="50dp"
+                    android:text="View Government Schemes"/>
+
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+
+  <!--  </androidx.cardview.widget.CardView> -->
+
+
+
+</LinearLayout>
